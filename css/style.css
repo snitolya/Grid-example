@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.grid-container{
+    /*display: flex;
+    gap: 10px 10px;
+    flex-wrap: wrap;*/
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px; /* можно заменить :repeat(4, 200px)*/
+    grid-template-rows: 200px 200px;
+    grid-gap: 10px 10px;
+
+}
+.block{
+    background: lightblue;
+    height: 100%;
+    width: 100%;
+}
+
+.grid-container .block:nth-child(1)
+{
+    grid-row-start:1;
+    grid-row-end: 3;
+
+}
+
+.grid-container .block:nth-child(6){
+    grid-row-start:1;
+    grid-row-end: 3;
+    grid-column-start: 4;
+    grid-column-end: 4;
+
+}
